@@ -86,7 +86,7 @@
     "bun": "^1.2.21",
     "caniuse-lite": "1.0.30001763",
     "cheerio": "1.1.2",
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.3",
     "cors": "^2.8.5",
     "cross-env": "^10.1.0",
     "electron-to-chromium": "1.5.267",
