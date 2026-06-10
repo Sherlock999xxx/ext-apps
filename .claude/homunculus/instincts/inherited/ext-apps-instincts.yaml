@@ -1,0 +1,320 @@
+# Instincts generated from https://github.com/Sherlock999xxx/ext-apps
+# Generated: 2026-06-10T19:40:55.716Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: ext-apps-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: build
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: build(deps): bump shell-quote and concurrently
+
+---
+id: ext-apps-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Commit Length
+
+## Action
+
+Keep commit messages concise (~46 characters)
+
+## Evidence
+
+- Average commit message length: 46 chars
+- Based on 1 commits
+
+---
+id: ext-apps-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: ext-apps-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: ext-apps-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: ext-apps-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: ext-apps-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: ext-apps-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: ext-apps-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: ext-apps-instinct-constant-naming
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: ext-apps-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: ext-apps-instinct-export-style
+trigger: "When exporting modules or values"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: ext-apps-instinct-git-commit-format
+trigger: "When making a git commit"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Git Commit Format
+
+## Action
+
+Format the commit message using Conventional Commits, e.g., 'build(deps): bump shell-quote and concurrently'
+
+## Evidence
+
+- Seen in commit: build(deps): bump shell-quote and concurrently
+- Pattern in commits.type: conventional
+
+---
+id: ext-apps-instinct-git-commit-prefix
+trigger: "When committing dependency changes"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Git Commit Prefix
+
+## Action
+
+Use the 'build' prefix in the commit message
+
+## Evidence
+
+- Seen in commit: build(deps): bump shell-quote and concurrently
+- Pattern in commits.prefixes
+
+---
+id: ext-apps-instinct-test-location
+trigger: "When adding tests"
+confidence: 0.7
+domain: testing
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Test Location
+
+## Action
+
+Place test files in a separate location from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: ext-apps-instinct-config-files-location
+trigger: "When adding or updating example app configuration"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: Sherlock999xxx/ext-apps
+---
+
+# Ext Apps Instinct Config Files Location
+
+## Action
+
+Place package.json files inside each example's folder under 'examples/'
+
+## Evidence
+
+- Pattern in architecture.configFiles
+- Pattern in architecture.folderStructure.commonFolders
+
